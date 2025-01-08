@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <!-- CSS LINKING -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <header>
+
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="big-card" >
+        <div class="name-card">
+          <img src="/images/image-jeremy.png" alt="">
+          <div>
+            <h3>  Report for</h3>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <div class="text">
+          <p id="btn-daily" class="btn-text">Daily</p>
+          <p id="btn-weekly" class="btn-text">Weekly</p>
+          <p id="btn-monthly" class="btn-text">Monthly</p>
+        </div>
+      </div>
+      <div class="work-card card">
+        <div class="img work-img">
+          <img src="/images/icon-work.svg" alt="">
+        </div>
+        <!-- <img src="/images/icon-work.svg" alt=""> -->
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Work</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="hours">
+            <h1 class="work-cur-hr"><span>5hrs</span></h1>
+            <p class="work-pre-hr">Last Week - <span>7hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="play-card card">
+        <div class="img play-img">
+          <img src="/images/icon-play.svg" alt="">
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Play</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h1 class="play-cur-hr"><span>1hr</span></h1>
+            <p class="play-pre-hr">Last Week - <span>2hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="study-card card">
+        <div class="img study-img">
+          <img src="/images/icon-study.svg" alt="">
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Study</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="hours">
+            <h1 class="study-cur-hr"><span>0hrs</span></h1>
+            <p class="study-pre-hr">Last Week - <span>1hr</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="exe-card card">
+        <div class="img exe-img">
+          <img src="/images/icon-exercise.svg" alt="">
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Exercise</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="hours">
+            <h1 class="exc-cur-hr"><span>1hr</span></h1>
+            <p class="exc-pre-hr">Last Week - <span>1hr</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="social-card card">
+        <div class="img social-img">
+          <img src="/images/icon-social.svg" alt="">
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Social</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="hours">
+            <h1 class="social-cur-hr"><span>1hr</span></h1>
+            <p class="social-pre-hr">Last Week - <span>3hrs</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="self-card card">
+        <div class="img self-img">
+          <img src="/images/icon-self-care.svg" alt="">
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h3>Self Care</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="hours">
+            <h1 class="self-cur-hr"><span>0hrs</span></h1>
+            <p class="self-pre-hr">Last Week - <span>1hr</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>

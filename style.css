@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(195, 74%, 62%);
+    --play: hsl(348, 100%, 68%);
+    --execise:  hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self-care: hsl(43, 84%, 65%);
+    
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturted-blue: hsl(235, 45%, 61%);
+    --pale-blue:hsl(236, 100%, 87%);
+  ;  font-family: "Rubik";
+  font-optical-sizing: auto;
+  font-weight:200;
+  font-style: normal;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows:  1fr 1fr; */
+    width: 60%;
+    place-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.big-card {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 380px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+}
+
+.big-card .name-card {
+    background-color: var(--blue);
+    height: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.big-card .name-card img {
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50px;
+}
+
+.big-card .name-card h3 {
+    font-weight: 100;
+    font-size: 10px;
+   
+}
+.big-card .name-card h1 {
+    font-family: "Rubik" !important;
+    font-style: normal;
+    font-weight: 100 !important;
+   
+}
+
+.big-card .name-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.big-card .text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.8rem;
+
+    color: var(--Desaturted-blue);
+}
+
+#btn-daily {
+    color: white;
+} 
+
+.work-card, .study-card, .social-card, .play-card, .self-card, .exe-card {
+   width: calc(100%);
+  
+    background-color: var(--Dark-blue);
+    overflow: hidden;
+
+}
+.card {
+    border-radius: 10px;
+}
+
+.card-body {
+    background-color: var(--Dark-blue);
+    padding: 1rem;
+    width: auto;
+    height: 140px;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    display: grid;
+    gap: 25px;
+}
+.card-body h3 {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.card-body h1 {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 2rem;
+}
+
+.card-body p {
+    font-size: 10px;
+    font-weight: 100;
+    color: rgba(239, 235, 235, 0.817);
+}
+
+.card-body .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body .card-header img {
+    width: 15px;
+   height: 3px;
+
+}
+.img img {
+    width: 50px;
+    height: 50px;
+}
+
+.img {
+    background-color: var(--self-care);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.work-img {
+    background-color: var(--work);
+}
+
+@media (max-width: 600px) {
+    body{
+        display: block;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .card {
+        height: 100px;
+    }
+    .big-card {
+        height: auto;
+    }
+    .big-card .name-card {
+        flex-direction: row;
+        height: auto;
+    }
+    .big-card .text {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+    .big-card .name-card h1 {
+        font-size: 20px;
+    }
+    .work-card, .study-card, .social-card, .play-card, .self-card, .exe-card {
+        height: auto;
+
+    }
+
+    .card-body .hours {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    .card-body {
+        height: auto;
+        gap:9px;
+    }
+}
+
+@media (min-width: 600px) {
+    .cards {
+        width: 90%;
+    }
+    
+}
