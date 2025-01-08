@@ -130,8 +130,8 @@ body{
     display: grid;
     gap: 25px;
 }
-.card-body h3 {
-    font-size: 10px;
+.card-body h2 {
+    font-size: 13px;
     font-weight: 500;
 }
 
