@@ -207,6 +207,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         height: auto;
+        cursor: pointer;
     }
     .big-card .name-card h1 {
         font-size: 20px;
