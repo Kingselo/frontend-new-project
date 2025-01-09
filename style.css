@@ -207,6 +207,10 @@ body{
         flex-direction: row;
         justify-content: space-between;
         height: auto;
+        
+    }
+
+    .big-card .text ~ p {
         cursor: pointer;
     }
     .big-card .name-card h1 {
